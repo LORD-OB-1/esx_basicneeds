@@ -10,15 +10,15 @@ Citizen.CreateThread(function()
 end)
 
 AddEventHandler('esx_basicneeds:resetStatus', function()
-	TriggerEvent('esx_status:set', 'hunger', 500000)
-	TriggerEvent('esx_status:set', 'thirst', 500000)
+	TriggerEvent('esx_status:set', 'hunger', 50000000)
+	TriggerEvent('esx_status:set', 'thirst', 50000000)
 end)
 
 RegisterNetEvent('esx_basicneeds:healPlayer')
 AddEventHandler('esx_basicneeds:healPlayer', function()
 	-- restore hunger & thirst
-	TriggerEvent('esx_status:set', 'hunger', 1000000)
-	TriggerEvent('esx_status:set', 'thirst', 1000000)
+	TriggerEvent('esx_status:set', 'hunger', 100000000)
+	TriggerEvent('esx_status:set', 'thirst', 100000000)
 
 	-- restore hp
 	local playerPed = PlayerPedId()
